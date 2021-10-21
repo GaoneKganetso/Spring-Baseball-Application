@@ -10,6 +10,9 @@ public class MyApp {
          **/
         Coach theCoach = new BaseBallCoach();
 
+        Coach trackCoach = new TrackCoach();
+
+
 
 
         //Use the object
