@@ -8,13 +8,13 @@ public class MyApp {
         3.BaseBallCoach theCoach = new BaseBallCoach();
         Change to
          **/
-        Coach theCoach = new BaseBallCoach();
+        //Coach theCoach = new BaseBallCoach();
 
         Coach trackCoach = new TrackCoach();
 
 
         //Use the object
-        System.out.println(theCoach.getDailyWorkout());
+        System.out.println(trackCoach.getDailyWorkout());
 
     }
 }

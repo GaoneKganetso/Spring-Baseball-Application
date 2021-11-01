@@ -8,8 +8,19 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
+
+    <bean id="myFortuneService"
+          class="C:\Users\F5390087\OneDrive - FRG\Documents\Spring and Hibernate For Beginners\Training\src\main\java\HappyFortuneService.java"
     <bean id = "myCoach"
           class = "C:\Users\F5390087\OneDrive - FRG\Documents\Spring and Hibernate For Beginners\Training\src\main\java\TrackCoach">
+
+    </bean>
+
+    <bean id = "myCricketCoach" 
+          class = "C:\Users\F5390087\OneDrive - FRG\Documents\Spring and Hibernate For Beginners\Training\src\main\java\CricketCoach.java">
+          
+        <!-- Set up setter Injection-->
+        <property name="fortuneService" ref="myFortuneService"/>
 
 
     </bean>
