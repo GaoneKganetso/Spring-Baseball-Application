@@ -7,6 +7,9 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <!--Injecting Values from a Properties File/loading the properties file-->
+    <context:property-placeholder location="classpath:sport.properties"
+
     <!-- Define your beans here -->
 
     <bean id="myFortuneService"
@@ -21,6 +24,12 @@
           
         <!-- Set up setter Injection-->
         <property name="fortuneService" ref="myFortuneService"/>
+
+
+        <!-- Injection literal values-->
+        <property name="emailAddress" value="g@gmail.com"/>
+        <!--Inject values from properties file-->
+        <property name="team" value="${foo.team}"/>
 
 
     </bean>

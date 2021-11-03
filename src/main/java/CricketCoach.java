@@ -1,5 +1,29 @@
 public class CricketCoach implements Coach {
 
+    //Create private fields for injecting literal values
+    private String emailAddress;
+    private String team;
+
+    //Generate Setter and getter methods for injecting literal value
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        System.out.println("CricketCoach:setEmailAddress");
+        this.emailAddress = emailAddress;
+    }
+
+    public String getTeam() {
+        return team;
+    }
+
+    public void setTeam(String team) {
+        System.out.println("CricketCoach :setTeam");
+        this.team = team;
+    }
+
     //Use the FortuneService interface
     private FortuneService fortuneService;
 
